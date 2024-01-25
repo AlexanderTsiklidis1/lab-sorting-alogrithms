@@ -39,7 +39,14 @@ const sortProductPriceD = (products) => {
 };
 
 // sort products by price, then by name, ascending order
-const sortProducsPriceNameA = () => {};
+const sortProducsPriceNameA = (products) => {
+  return products.sort((a, b) => {
+    if (a.price === b.price) {
+      return a.name.localeCompare(b.name);
+    }
+    return a.price - b.price;
+  });
+};
 
 // sort catArt by designed by
 const catArtSortDesginedByA = () => {};
