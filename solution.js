@@ -17,7 +17,9 @@ const sortWordsA = (words) => {
 
 // sort words in descending order case insensitive
 const sortWordsD = (words) => {
-  
+  return words.sort((a, b) => b.localeCompare(a));
+  //used localeCompare --> returns  number indicating whether this 
+  //string comes before or after or the same as given string in sort order 
 };
 
 // sort products by name, ascending order case insensitive
