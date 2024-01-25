@@ -24,18 +24,18 @@ const sortWordsD = (words) => {
 
 // sort products by name, ascending order case insensitive
 const sortProductNamesA = (products) => {
-  return products.sort((a,b) => a.name.localeCompare(b.name))
+  return products.sort((a,b) => a.name.localeCompare(b.name));
   //uses locale compare for same reason described above(comparing strings)
 };
 
 // sort products by price, ascending order
 const sortProductPriceA = (products) => {
-  return products.sort((a,b) => a.price - b.price)
+  return products.sort((a,b) => a.price - b.price);
 };
 
 // sort products by price, descending order
 const sortProductPriceD = (products) => {
-  return products.sort((a,b) => b.price - a.price)
+  return products.sort((a,b) => b.price - a.price);
 };
 
 // sort products by price, then by name, ascending order
@@ -49,7 +49,9 @@ const sortProducsPriceNameA = (products) => {
 };
 
 // sort catArt by designed by
-const catArtSortDesginedByA = () => {};
+const catArtSortDesginedByA = (art) => {
+  return art.sort((a, b) => a.designedBy.localeCompare(b.designedBy));
+};
 
 // sort catArt by price
 const catArtSortByPriceA = () => {};
