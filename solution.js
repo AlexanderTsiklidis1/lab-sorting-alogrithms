@@ -23,13 +23,20 @@ const sortWordsD = (words) => {
 };
 
 // sort products by name, ascending order case insensitive
-const sortProductNamesA = () => {};
+const sortProductNamesA = (products) => {
+  return products.sort((a,b) => a.name.localeCompare(b.name))
+  //uses locale compare for same reason described above(comparing strings)
+};
 
 // sort products by price, ascending order
-const sortProductPriceA = () => {};
+const sortProductPriceA = (products) => {
+  return products.sort((a,b) => a.price - b.price)
+};
 
 // sort products by price, descending order
-const sortProductPriceD = () => {};
+const sortProductPriceD = (products) => {
+  return products.sort((a,b) => b.price - a.price)
+};
 
 // sort products by price, then by name, ascending order
 const sortProducsPriceNameA = () => {};
